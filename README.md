@@ -1,1 +1,1 @@
-![example workflow](https://github.com/GeorgKonst//actions/workflows/gradle.yml/badge.svg)
+![example workflow](https://github.com/GeorgKonst/AQA/actions/workflows/gradle.yml/badge.svg)
