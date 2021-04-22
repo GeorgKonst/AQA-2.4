@@ -87,19 +87,16 @@ public class PayTest {
         assertEquals(expected1, dashboardPage.getBalanceCard1());
         assertEquals(expected2, dashboardPage.getBalanceCard2());
     }
-
-    @Test
-    void shouldTransferOverLimitMounts(){
-        DashboardPage dashboardPage = new DashboardPage();
-        int overLimitMounts = dashboardPage.getBalanceCard1() + 1000;
-        dashboardPage.cardClick(1);
-        sleep(5000);
-        dashboardPage.setAmount(String.valueOf(overLimitMounts));
-        dashboardPage.setFromCard(DataHelper.getCard2());
-        sleep(5000);
-        dashboardPage.getTransfer();
-        dashboardPage.getErrorTransfer().shouldBe(Condition.visible);
-    }
+//
+//    @Test
+//    void shouldTransferOverLimitMounts(){
+//        DashboardPage dashboardPage = new DashboardPage();
+//        int overLimitMounts = dashboardPage.getBalanceCard1() + 1000;
+//        dashboardPage.cardClick(1);
+//        dashboardPage.setAmount(String.valueOf(overLimitMounts));
+//        dashboardPage.setFromCard(DataHelper.getCard2());
+//        dashboardPage.getErrorTransfer().shouldBe(Condition.visible);
+//    }
 
 
 
